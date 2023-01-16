@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="page1.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="container">
+      <form action="">
+      <div class="line">
+        <h4 class="name">HSC Institution name<span class="astric">*</span></h4>
+        <input onchange="changeData2(event)" name="HSCinstituteName" type="text" required />
+      </div>
+
+      <div class="line">
+        <h4 class="name">HSC Board<span class="astric">*</span></h4>
+        <input
+        onchange="changeData2(event)"
+          type="text"
+          name="HSCboard"
+          placeholder="i.e CBSC,ICSC or State board"
+          required
+        />
+      </div>
+      <div class="line">
+        <h4 class="name">
+          Score in HSC in percentage<span class="astric">*</span>
+        </h4>
+        <input onchange="changeData2(event)" name="scoreInHSC" type="text" maxlength="3"  required  />
+      </div>
+      <div class="line">
+        <h4 class="name">SSC Institution name<span class="astric">*</span></h4>
+        <input onchange="changeData2(event)" name="SSCinstitutionName" type="text" required  />
+      </div>
+
+      <div class="line">
+        <h4 class="name">SSC Board<span class="astric">*</span></h4>
+        <input
+        onchange="changeData2(event)"
+          type="text"
+          name="SSCboard"
+          placeholder="i.e CBSC,ICSC or State board"
+          required
+        />
+      </div>
+
+      <div class="line">
+        <h4 class="name">
+          Score in SSC in percentage<span class="astric">*</span>
+        </h4>
+        <input onchange="changeData2(event)" name="scoreInSSC" type="text" maxlength="3" required  />
+      </div>
+
+      <div class="line">
+        <h4 class="name">Currently pursuing<span class="astric">*</span></h4>
+        <input name="currentEducation" type="text" required  />
+      </div>
+
+      <div class="line">
+        <h4 class="name">
+          Currently educational institution name<span class="astric">*</span>
+        </h4>
+        <input onchange="changeData2(event)" name="currentEducationalInstitution" required  type="text" />
+      </div>
+      <div class="line">
+        <h4 class="name">Overall percentage<span class="astric">*</span></h4>
+        <input onchange="changeData2(event)" name="overalPercentage" maxlength="3" type="text" required  />
+      </div>
+      <div class="line">
+        <h4 class="name">
+          Current backlogs if any<span class="astric">*</span>
+        </h4>
+        <input onchange="changeData2(event)" name="backlog" type="text" required  />
+      </div>
+      <button onclick="submitData2()" type="submit" style="padding:5px; width:100px;">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>

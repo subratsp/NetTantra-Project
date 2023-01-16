@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <link rel="stylesheet" href="page1.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="container">
+      <h4 class="name">Recent passport size photograph</h4>
+      <form action="">
+      <input
+      onchange="changeData3(event)"
+      name="passportSizePhoto"
+        class="file-uplod-input"
+        type="file"
+        onchange="readURL(this)"
+        accept="Image/*"
+      />
+      <h4 class="name">HSC mark sheet</h4>
+
+      <input
+      onchange="changeData3(event)"
+      name="HSCmarkSheet"
+        class="file-uplod-input"
+        type="file"
+        onchange="readURL(this)"
+        accept="pdf/*"
+      />
+      <h4 class="name">SSC mark sheet</h4>
+
+      <input
+      onchange="changeData3(event)"
+      name="SSCmarkSheet"
+        class="file-uplod-input"
+        type="file"
+        onchange="readURL(this)"
+        accept="pdf/*"
+      />
+      <h4 class="name">All semesters mark sheet in a single PDF or docs</h4>
+
+      <input
+      onchange="changeData3(event)"
+      name="allSemesterMarkSheet"
+        class="file-uplod-input"
+        type="file"
+        onchange="readURL(this)"
+        accept="Image/*"
+      />
+      <button onclick="submitDat3()" type="submit" style="width: 100px; padding:5px;"> Submit </button>
+    </form>
+    </div>
+  </body>
+</html>
